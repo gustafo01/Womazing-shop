@@ -210,14 +210,18 @@ svg path {
     margin: 46px 0 52px;
 }
 
-.offer-btn {
-    position: relative;
+.offer-btn-wrap {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.offer-btn::before {
+.offer-btn-wrap {
+
+}
+
+.offer-btn-wrap::before {
     content: '';
     background: rgba(110, 156, 159, 0.1) url('../img/arrow-down.svg') no-repeat center center;
-    position: absolute;
     display: block;
     width: 65px;
     height: 65px;
@@ -226,7 +230,7 @@ svg path {
     transition: 0.5s ease;
 }
 
-.offer-btn:hover:before {
+.offer-btn-wrap:hover:before {
     background-color: rgba(110, 156, 159, 0.3);
 }
 
@@ -1494,6 +1498,9 @@ svg path {
         max-width: none;
         text-align: unset;
     }
+    .offer-btn-wrap {
+        justify-content: center;
+    }
     .dots {
         justify-content: center;
     }
@@ -1685,6 +1692,9 @@ svg path {
         padding: 30px 20px;
         margin-top: 30px;
         font-size: 14px;
+    }
+    .offer-btn {
+        padding: 22px 40px;
     }
 }
 
